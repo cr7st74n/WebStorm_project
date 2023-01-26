@@ -1,0 +1,19 @@
+*{
+    background-color: gray;
+}
+
+#title{
+    color: blue;
+}
+#real-alert{
+    display: flex;
+    justify-content:flex-start;
+    color: white;
+    background-color: red;
+}
+#test-only{
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    background-color: yellow;
+}

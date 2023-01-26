@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <h3>Student Form</h3>
+    <form>
+        <!-- Name part  -->
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="Inp_name"> <br>
+        <!-- Email part -->
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="Inp_email"> <br>
+        <!-- Comments part -->
+        <label for="comments">Comments:</label> <br>
+        <textarea name="comm" id="comments" cols="24" rows="3" required></textarea> <br>
+        <!-- Sunmit Area -->
+        <p>Are you a current student?:</p>
+        <input id="Yes" type="radio" value="yes" name="student">
+        <label for="Yes">Yes</label> 
+        <input id="No" type="radio" value="no" name="student">
+        <label for="No">No</label> <br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+    
+</body>
+</html>
