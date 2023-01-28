@@ -17,3 +17,11 @@ h3{
     border-color: #021F59;
     color: #CEB3F2;
 }
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+p{
+    font-weight: bold;
+}
