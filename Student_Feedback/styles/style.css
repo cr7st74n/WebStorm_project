@@ -1,7 +1,19 @@
-*{
+body{
     background-color: #ABA0F2;
+    font-family: 'Noto Sans Symbols', sans-serif;
 }
+h3{
+    color: #021F59;
+    font-family: 'Solitreo', cursive;
+}
+
+.jumbotron{
+    background-color: #023E73;
+    color: #CEB3F2;
+}
+
 #btn{
     background-color: #021F59;
     border-color: #021F59;
+    color: #CEB3F2;
 }
