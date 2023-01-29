@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Program</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+<body class="m-4">
+    <header class="row-cols-1">
+        <h1> Weather Dashboard Program</h1>
+    </header>
+    <div class="jumbotron">
+        <ul>
+            <h2>Web app to check the weather in diferent cities.</h2>
+            <li>This web-app will provide the most accurate information about the weather in different cities.</li>
+            <li>This program is built for travelers that wanted to check for climate updates through our website.</li>
+            <li>The real-time wheather updates that the news could not provide immediately as a website.</li>
+            <li>The use of external API is essential for this project, how to request from important web weather sources.</li>
+        </ul>
+    </div>
+    <main >
+        <div class="row">
+            <div class="col">
+                <h3>Short code example:</h3>
+                <pre>
+                    <code>
+                        function Weather_app(city){
+        
+                            var url = (`https://api.openweathermap.org/geo/1.0/direct?q=${city},&limit=${Number}&appid=${keyCR}`);
+                            var cityName;
+                            var latCity;
+                            var lonCity
+                       
+                            var climateAPI = fetch(url).then(function(ResposeWeather){
+                                 var WeatherData = ResposeWeather.json();
+                                 return WeatherData;
+                            })
+                            .then(function(ArrData){
+                                 cityName = ArrData[0].name;
+                                 //console.log(cityName);
+                                 latCity = ArrData[0].lat;
+                                 //console.log(latCity);
+                                 lonCity = ArrData[0].lon;
+                                 //console.log(lonCity);  
+                       
+                                 passData(latCity,lonCity);
+                       
+                            })
+                            .catch(function(err){
+                                 console.log(err);
+                                 console.log('here is an error');
+                            })
+                            ;
+                       } 
+                    </code>
+                </pre>
+            </div>
+            <div class="col">
+                <h3>Information about the code.</h3>
+                <p>This part of the code is an Function that is going to call an API and get back
+                    the information about certain area. Information like: wheather,temp ,wind ,humidity and UV index.
+                </p>
+                <p>If you would like to give it a try, you can check it out in this link: 👇</p>
+                <a href="https://cr7st74n.github.io/Weather-Dashboard/">Weather-Dashboard</a>
+                <img src="./styles/img/wea-D.png" alt="Weather_app img" class="img">
+                <img src="./styles/img/whe-21.png" alt="Weather_app img2" class="img">
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="row">
+
+    </footer>
+
+</body>
+</html>
