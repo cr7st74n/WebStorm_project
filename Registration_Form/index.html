@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="m-5">
+    <h3>Registration Form</h3>
+
+    <div class="jumbotron row">
+        <h2>In this form, please fill every part to proceed with the conference. Thank you!</h2>
+    </div>
+
+    <form>
+        <div class="row">
+            <div class="col">
+                <!-- Name part  -->
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="Inp_name" class="form-control" maxlength="70"> <br>
+                <!-- password part -->
+                <label for="pass">Password:</label>
+                <input id="pass" type="password" name="Inp_pass" class="form-control"> <br>
+                <!-- email part -->
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="Inp_email" class="form-control"> <br>
+                <!-- option element -->
+                <p>Which is your t-shirt size? (All attendees receive a free t-shirt.)</p>
+
+                <div class="form-check">
+                    <select id="t-shirt">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="large">Large</option>
+                      </select>
+                </div>
+
+                <!-- Dob part -->
+                <label for="date">Date of birth:</label>
+                <input id="date" type="date" name="Inp_age" class="form-control"> <br>
+
+                <p>Receive email updates?</p>
+                <div class="form-check">
+                    <input id="Yes" type="radio" class="form-check-input" value="yes" name="student">
+                    <label for="Yes" class="form-check-label">Yes</label>
+                </div>
+
+                <div class="form-check">
+                    <input id="No" type="radio" class="form-check-input" value="no" name="student">
+                    <label for="No" class="form-check-label">No</label> <br>
+                </div>
+                <!-- Section  -->
+                <label >Choose sessions:</label> <br>
+                <input id="morning" type="checkbox" name="Inp_sess"> 
+                <label for="morning">Morning</label>
+                <input id="afternoon" type="checkbox" name="Inp_sess"> 
+                <label for="afternoon">Afternoon</label>
+                <br>
+
+
+                <!-- Comments part -->
+                <label for="comments">Special Requests:</label> <br>
+                <textarea name="comm" id="comments" cols="70" rows="37" required class="form-control"></textarea> <br>
+                <!-- Sunmit Area -->
+
+                <input id="btn" type="submit" value="Submit" class="btn btn-primary mt-4" name="btn">
+            </div>
+        </div>
+
+    </form>
+
+
+
+</body>
+
+</html>
